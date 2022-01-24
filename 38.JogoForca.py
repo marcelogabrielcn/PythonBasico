@@ -9,24 +9,29 @@ print('BEM VINDO AO JOGO DA FORCA')
 print('-=-' * 10)
 
 print('\nVamos começar...')
-sleep(0.5)
+sleep(1)
+print('Dica: A palavra secréta é uma fruta...')
+sleep(2)
 
-DB = ['laranja', 'uva', 'pera', 'kiwi', 'banana', 'morango', 'tomate']
+DB = ['laranja', 'uva', 'pera', 'kiwi', 'banana', 'morango', 'tomate', 'melancia']
 vidas = 5
 palavra_secreta = random.choice(DB)
-palavra_jogador = '*' * len(palavra_secreta)
-
-
-print(palavra_jogador)
-print(palavra_secreta)
-while vidas >= 0:
-    letra = str(input('Digite uma letra: '))
-    for i, l in enumerate(palavra_secreta):
-        if letra == l:
-            ...
-        else:
-            print('Oops, não tem essa letra.')
-            vidas -= 1
+print(f'A palavra secreta tem {len(palavra_secreta)} letras.')
+sleep(1.5)
 
 print(palavra_secreta)
-print(palavra_jogador)
+letras_digitadas = []
+while True:
+    if vidas > 0:
+        print(f'Você tem {vidas} tentativas')
+        palavra_temporaria = ''
+
+        letra_jogador = str(input('Digite uma letra: '))
+
+        for letras in palavra_secreta:
+            if letra_jogador in palavra_secreta:
+                letras_digitadas.append(letra_jogador)
+
+            else:
+                palavra_temporaria += '*'
+        print(palavra_temporaria)
