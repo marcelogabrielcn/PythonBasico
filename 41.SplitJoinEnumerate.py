@@ -23,3 +23,16 @@ variavel_espacada = '    My name is Marcelo        '
 print(variavel_espacada)
 print(variavel_espacada.strip())
 
+listaInLista = [
+    [1, 'Marcelo'],
+    [2, 'Gabriel'],
+    [3, 'Binho']
+]
+
+for v in listaInLista:
+    print(v)
+
+listaInLista2 = ['Marcelo', 'Gabriel', 'Binho']
+
+for v, nome in enumerate(listaInLista2):
+    print(v, nome)
