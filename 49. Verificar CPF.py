@@ -29,7 +29,7 @@ for num in novo_cpf:
         soma2 += res2
         mult2 -= 1
 
-d2 = 11 -(soma2 % 11)
+d2 = 11 - (soma2 % 11)
 if d2 > 9:
     d2 = 0
 
