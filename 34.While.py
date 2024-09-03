@@ -1,7 +1,9 @@
 """
+
 A estrutura While serve para criar um laço de repetição.
 While em inglês significa enquanto. Portanto, a estrutura quer dizer,
 enquanto tal condição for verdadeira, faça tal coisa.
+
 """
 
 x = 0
